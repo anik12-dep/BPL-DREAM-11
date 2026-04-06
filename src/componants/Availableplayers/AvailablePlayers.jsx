@@ -1,4 +1,6 @@
 import React from "react";
+import { FaUserAlt } from "react-icons/fa";
+import { FaFlag } from "react-icons/fa6";
 
 const AvailablePlayers = ({ players }) => {
   console.log(players, "players");
@@ -13,14 +15,27 @@ const AvailablePlayers = ({ players }) => {
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">Card Title</h2>
-          <p>
-            A card component has a figure, a body part, and inside body there
-            are title and actions parts
-          </p>
+          <h2 className="card-title">
+            <FaUserAlt />
+            Card Title
+          </h2>
+          <div className="flex justify-between gap-2 items-center">
+            <div className="flex gap-2 items-center">
+              <FaFlag />
+              <p>Bangladesh</p>
+            </div>
+            <button className="btn ">All-rounder</button>
+          </div>
+          <div className="divider"></div>
+          <h2 className="font-bold">Rating</h2>
+          <div className="flex justify-between gap-18 font-bold">
+            <p>Left-Hand-Bat</p>
+            <p>Left-Hand-Ball</p>
+          </div>
 
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+          <div className="card-actions justify-between items-center">
+            <p className="font-semibold">Price: $1500000</p>
+            <button className="btn ">Choose Player</button>
           </div>
         </div>
       </div>
