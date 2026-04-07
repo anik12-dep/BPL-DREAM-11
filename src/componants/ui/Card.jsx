@@ -11,6 +11,7 @@ const Card = ({ player, setCoin, coin }) => {
       setCoin(coin - player.price);
     } else {
       alert("Not enough coin to purchase this player");
+    
     }
     alert(`${player.name} is selected`);
     setIsSelected(true);
