@@ -1,14 +1,41 @@
-import React, { use } from "react";
-// '../../' এর বদলে একটি '../' হবে কারণ player এবং Availableplayers একই লেভেলে আছে
-import AvailablePlayers from "../Availableplayers/AvailablePlayers.jsx";
+import { use, useState } from "react";
 
-const Player = ({ playersPromise }) => {
+import AvailablePlayers from "../Availableplayers/AvailablePlayers.jsx";
+import SelectedPlayers from "../selectedplayers/SelectedPlayers.jsx";
+
+const Player = ({ playersPromise, setCoin, coin }) => {
   const players = use(playersPromise);
+  const [selectedType, setselectedType] = useState("available");
+  console.log(selectedType, "selectedType");
 
   return (
-    <div className="container mx-auto">
-      Player: {players.length}
-      <AvailablePlayers players={players} />
+    <div className="container mx-auto my-[60px]">
+      <div className="flex justify-between gap-4 items-center mb-[20px]">
+        {selectedType === "available" ? (
+          <h2 className="font-bold text-3xl">Available Players</h2>
+        ) : (
+          <h2 className="font-bold text-3xl">Selected Player (4/6)</h2>
+        )}
+        <div className="">
+          <button
+            onClick={() => setselectedType("available")}
+            className={`btn ${selectedType === "available" ? "bg-[#E7FE29]" : ""}  rounded-r-none rounded-l-[10px]`}
+          >
+            Available
+          </button>
+          <button
+            onClick={() => setselectedType("Selected (0)")}
+            className={`btn ${selectedType === "Selected (0)" ? "bg-[#E7FE29]" : ""}  rounded-l-none rounded-r-[10px]`}
+          >
+            Selected (0)
+          </button>
+        </div>
+      </div>
+      {selectedType === "available" ? (
+        <AvailablePlayers players={players} setCoin={setCoin} coin={coin} />
+      ) : (
+        <SelectedPlayers />
+      )}
     </div>
   );
 };

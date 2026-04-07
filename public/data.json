@@ -6,8 +6,8 @@
     "role": "Batsman",
     "batting_style": "Right-hand bat",
     "bowling_style": "Right-arm medium",
-    "image": "https://i.ibb.co/v4K6G6V/kohli.jpg",
-    "price": 1500000,
+    "image": "https://skillcircle.in/wp-content/uploads/2024/10/Virat-Kohli-1024x1024.jpg",
+    "price": 1500,
     "rating": 4.9
   },
   {
@@ -17,8 +17,8 @@
     "role": "All-rounder",
     "batting_style": "Left-hand bat",
     "bowling_style": "Slow left-arm orthodox",
-    "image": "https://i.ibb.co/M9K7G6V/shakib.jpg",
-    "price": 1200000,
+    "image": "https://skillcircle.in/wp-content/uploads/2024/10/Virat-Kohli-1024x1024.jpg",
+    "price": 1200,
     "rating": 4.8
   },
   {
@@ -29,7 +29,7 @@
     "batting_style": "Right-hand bat",
     "bowling_style": "Right-arm offbreak",
     "image": "https://skillcircle.in/wp-content/uploads/2024/10/Virat-Kohli-1024x1024.jpg",
-    "price": 1300000,
+    "price": 1300,
     "rating": 4.7
   },
   {
@@ -39,8 +39,8 @@
     "role": "Bowler",
     "batting_style": "Right-hand bat",
     "bowling_style": "Right-arm fast",
-    "image": "https://i.ibb.co/L4K6G6V/cummins.jpg",
-    "price": 1100000,
+    "image": "https://skillcircle.in/wp-content/uploads/2024/10/Virat-Kohli-1024x1024.jpg",
+    "price": 1100,
     "rating": 4.6
   },
   {
@@ -50,8 +50,8 @@
     "role": "Wicketkeeper Batsman",
     "batting_style": "Right-hand bat",
     "bowling_style": "N/A",
-    "image": "https://i.ibb.co/J4K6G6V/buttler.jpg",
-    "price": 1400000,
+    "image": "https://skillcircle.in/wp-content/uploads/2024/10/Virat-Kohli-1024x1024.jpg",
+    "price": 1400,
     "rating": 4.8
   },
   {
@@ -61,8 +61,8 @@
     "role": "Bowler",
     "batting_style": "Right-hand bat",
     "bowling_style": "Right-arm legbreak",
-    "image": "https://i.ibb.co/R4K6G6V/rashid.jpg",
-    "price": 1000000,
+    "image": "https://skillcircle.in/wp-content/uploads/2024/10/Virat-Kohli-1024x1024.jpg",
+    "price": 1000,
     "rating": 4.9
   }
 ]

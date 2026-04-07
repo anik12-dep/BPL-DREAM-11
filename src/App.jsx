@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import "./App.css";
 
 import Navbar from "./componants/navbar/Navbar.jsx";
@@ -12,14 +12,14 @@ const fetchPlayer = async () => {
 
 function App() {
   const playersPromise = fetchPlayer();
-
+  const [coin, setCoin] = useState(50000);
   return (
     <>
-      <Navbar />
+      <Navbar coin={coin} />
       <Banner />
 
       <Suspense fallback={<div>Loading... Please wait.</div>}>
-        <Player playersPromise={playersPromise} />
+        <Player playersPromise={playersPromise} setCoin={setCoin} coin={coin} />
       </Suspense>
     </>
   );
