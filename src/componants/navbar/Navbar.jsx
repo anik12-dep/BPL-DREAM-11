@@ -1,6 +1,5 @@
 import React from "react";
-// '../' দিলে আপনি যাবেন componants এ, '../../' দিলে আপনি যাবেন src ফোল্ডারে।
-// সেখান থেকে assets এ ঢুকবেন।
+
 import dollarOne from "../../assets/doller-one.png";
 
 const Navbar = ({coin}) => {
